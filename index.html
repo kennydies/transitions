@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Transitions</title>
+</head>
+<body>
+
+<div class="button button1">Color</div>
+<div class="button button2">Position</div>
+<div class="button button3">Size</div>
+<div class="button button4">Rotate</div>
+<div class="button button1 button2 button3 button4 button5">ALL!11!!!1</div>
+<div class="button button6">Click</div>
+
+<script>
+    document.querySelector('.button6').addEventListener('click', function () {
+        this.className += ' clicked';
+    });
+
+    document.querySelector('.button6').addEventListener('transitionend', function (event) {
+        if (event.propertyName == 'transform') {
+            alert("Transition Done");
+        }
+    });
+</script>
+
+</body>
+</html>

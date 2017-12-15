@@ -1,0 +1,72 @@
+.button{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    margin: 5px auto;
+    line-height: 50px;
+    text-align: center;
+    border: solid 2px cornflowerblue;
+    font-size: 24px;
+    left: 0px;
+
+    color: cornflowerblue;
+    background-color: white;
+    transition: all .5s ease-in-out;
+}
+
+.button1:hover{
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.button2:hover{
+    left: 20px;
+}
+
+.button3:hover{
+    height: 100px;
+    line-height: 100px;
+    width: 300px;
+    font-size: 48px;
+}
+
+.button4:hover{
+    transform: rotate(360deg);
+}
+
+.button5{
+    transition: all .5s ease-in-out;    /*Bei Button 5 sind nun zwei verschiedene Animationen definiert*/
+}                                       /*Das ist die End Animation*/
+
+.button5:hover{                         /*Und das die Start Animation*/
+    transition: color .5s ease-in-out,
+    background-color .5s ease-in-out,
+    left .5s ease-in-out .5s,
+    height .5s ease-in-out 1s,
+    width .5s ease-in-out 1s,
+    line-height .5s ease-in-out 1s,
+    font-size .5s ease-in-out 1s,
+    transform .5s ease-in-out 1.5s;
+}
+
+.button6{
+    transition: color .5s ease-in-out,
+    background-color .5s ease-in-out,
+    left .5s ease-in-out .5s,
+    height .5s ease-in-out 1s,
+    width .5s ease-in-out 1s,
+    line-height .5s ease-in-out 1s,
+    font-size .5s ease-in-out 1s,
+    transform .5s ease-in-out 1.5s;
+}
+
+.clicked{
+    background-color: cornflowerblue;
+    color: white;
+    left: 20px;
+    height: 100px;
+    line-height: 100px;
+    width: 300px;
+    font-size: 48px;
+    transform: rotate(360deg);
+}
